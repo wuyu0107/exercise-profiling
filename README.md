@@ -27,6 +27,37 @@ Profiling | <img width="500" alt="highest-gpa-b4" src="https://github.com/user-a
 
 Conclusion: There has been an improvement of 61.5%, with average response time reduced from 130ms to 50ms. 
 
+<details>
+<summary><h3> Reflection </summary>
+  
+##### What is the difference between the approach of performance testing with JMeter and profiling with IntelliJ Profiler in the context of optimizing application performance?
+The difference lies between the main purpose of optimizing application performance. The performance testing with Jmeter aims to measure the overall application performance under concurrency and stress, while profiling identifies bottlenecks within the applicatoin code such as CPU usage, memory allocation, and execution time). 
+
+##### How does the profiling process help you in identifying and understanding the weak points in your application?
+It helps by detecting performance bottlenecks, by allowing profiling tools to analyze CPU, memory, disk and network usage to identify slow methods. Since it also tracks memory allocation and leaks, it helps to prevent excessive memory consumption and potential crashes. It also helped to measure improvements and make sure that optimizations made are effective. 
+
+##### Do you think IntelliJ Profiler is effective in assisting you to analyze and identify bottlenecks in your application code?
+Yes. I think IntelliJ Profiler is effective as it helps to identify inefficient methods in our application code. Having inefficient code means we would have longer execution time which is bad. It also reduces the potential memory leaks that can happen, which will help improve the performance and stability of the code. 
+
+##### What are the main challenges you face when conducting performance testing and profiling, and how do you overcome these challenges?
+The main challenge was with testing the performance of the methods before optimizing because of its big dataset. I think another challenge is having too much profiling data, because since the profiler shows all the CPU allocations of all the methods and the application itself, it was little overwhelming for me to see which part I need to see to do the exercise. The solution to this was prioritzing the main methods that used the most CPU and memory. 
+
+##### What are the main benefits you gain from using IntelliJ Profiler for profiling your application code?
+I think the main benefit of using IntelliJ profiler is that since it is built-in within the IntelliJ, I don't need to install an external profiling tool. As a profiler, it allowed me to monitor CPU, memory and thread activity while running the application. With the flame graphs and call trees, it helped to visualize the execusion flow to figure out which method is inefficient easily. 
+
+##### How do you handle situations where the results from profiling with IntelliJ Profiler are not entirely consistent with findings from performance testing using JMeter?
+If results from IntelliJ profiler and performance testing using Jmeter is different, I would first run more tests to confirm the inconsistencies. Then make sure that the condition of both tools are similar as having different conditions may affect the results. 
+
+##### What strategies do you implement in optimizing application code after analyzing results from performance testing and profiling? How do you ensure the changes you make do not affect the application's functionality?
+
+The strategies that can be implemented are:
+- Focusing on functions or queries that consume the most CPU and memory
+- Using indexing and query optimzation to improve the database performace
+- Reduce loops in methods (which was done in our exercise)
+
+To ensure functionality of the application, we can write unit tests to ensure the test coverage before making changes or compare the performace of application before and after to measure the improvements. 
+
+</details>
 
 
 
